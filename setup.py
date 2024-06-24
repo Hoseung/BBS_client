@@ -9,12 +9,12 @@ py_include_dir = os.path.join(get_python_inc())
 __version__ = "1.0"
 
 setup(
-    name="bbsQt",
+    name="bbsQtc",
     version=__version__,
     author="DeepInsight",
     packages=find_packages(),
     author_email="hschoi@dinsight.ai",
-    url="https://github.com/Hoseung/Kinect_BBS_demo",
+    url="https://github.com/Hoseung/BBS_client",
     description="BBS scoring application using fully homomorphic encryption over TCP socket communication",
     long_description="",
     zip_safe=False,

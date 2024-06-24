@@ -4,9 +4,9 @@ import multiprocessing as mplti
 import argparse
 from PyQt5.QtWidgets import QApplication
 
-from bbsQt.qtgui.qobj.QmainWindow import *
+from bbsQtc.qtgui.qobj.QmainWindow import *
 from client.encryptor import HEAANEncryptor
-from bbsQt import constants
+from bbsQtc import constants
 
 def run_qt_app(q_sk, q_answer, e_sk , e_ans):
     """Run the Qt application."""
@@ -66,7 +66,9 @@ def main():
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("--host", dest='HOST')
+    parser.add_argument("--port", dest='PORT')
     args = parser.parse_args()
 
     constants.HOST = args.HOST
+    if args.PORT: constants.PORT = args.PORT
     main()

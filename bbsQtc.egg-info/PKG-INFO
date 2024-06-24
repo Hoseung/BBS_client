@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: bbsQtc
+Version: 1.0
+Summary: BBS scoring application using fully homomorphic encryption over TCP socket communication
+Home-page: https://github.com/Hoseung/BBS_client
+Author: DeepInsight
+Author-email: hschoi@dinsight.ai
